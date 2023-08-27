@@ -30,15 +30,15 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         overflow: hidden;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
         
         background-color: white;
         width: 250px;
-        height: 515px;
+        height: 510px;
         border-radius: 20px;
-
+        
+        transform: translate(-50%, -50%);
         transition: width 0.3s, height 0.3s;
         transition-timing-function: ease;
     }
@@ -65,15 +65,42 @@
 
     form > div.campo{
         background-color: #5f2c82;
+        border: 2px solid #5f2c82;
         display: block;
         width: 100%;
-        height: 40px;
-        border-radius: 5px;
-        margin: 5px 0px;
+        height: 45px;
+        border-radius: 8px;
+        margin: 8px 0px;
     }
 
     div.campo > label{
         display: none;
+    }
+
+    div.campo > span{
+        color: white;
+        font-size: 2em;
+        width: 40px;
+        padding: 5px;
+    }
+
+    div.campo > input{
+        background-color:#b9fffd;
+        font-size: 1em;
+        /* falta width */
+        width: calc(100% - 45px);
+        height: 38px;
+        border: 0px;
+        border-radius: 8px;
+        padding: 4px;
+        transform: translateY(-11px);
+        
+        
+    }
+
+    div.campo > input:focus-within{
+        background-color: white;
+        outline: none;
     }
 
     form > input[type=submit]{
