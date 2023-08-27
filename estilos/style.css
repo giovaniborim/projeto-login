@@ -38,11 +38,15 @@
         width: 250px;
         height: 500px;
         border-radius: 20px;
+
+        transition: width 0.3s, height 0.3s;
+        transition-timing-function: ease;
     }
 
     section#login > div#imagem{
         background:#5f2c82 url(../imagens/pexels-kevin-bidwell-1373100.jpg)no-repeat;
         background-size: cover;
+        background-position: center;
         height: 200px;
         
     }
